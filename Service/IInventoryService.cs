@@ -4,7 +4,7 @@ namespace dotnet_enigpus.Service;
 
 public interface IInventoryService
 {
-    void addBook(Book book);
-    List<Book> searchBook(string title);
-    List<Book> getAllBook();
+    void AddBook(Book book);
+    List<Book> SearchBook(string title);
+    List<Book> GetAllBook();
 }
