@@ -3,9 +3,9 @@ namespace dotnet_enigpus.Model;
 public class Magazine : Book
 {
     private string _title;
-    private string Code { get; set; }
-    private string Publisher { get; set; }
-    private int Year { get; set; }
+    public string Code { get; set; }
+    public string Publisher { get; set; }
+    public int Year { get; set; }
 
     public override string GetTitle()
     {
@@ -14,5 +14,13 @@ public class Magazine : Book
     public void SetTitle(string title)
     {
         _title = title;
+    }
+
+    public Magazine(string title, string code, string publisher, int year)
+    {
+        _title = title;
+        Code = code;
+        Publisher = publisher;
+        Year = year;
     }
 }
